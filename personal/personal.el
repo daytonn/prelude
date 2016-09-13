@@ -47,7 +47,6 @@
 (global-set-key (kbd "C-\\") 'other-window)
 (global-set-key (kbd "s-d") 'duplicate-line)
 (global-set-key (kbd "C-s-n") 'move-text-down)
-(global-set-key (kbd "s-f") 'projectile-grep)
 (global-set-key (kbd "s-t") 'find-file)
 (blink-cursor-mode t)
 (set-cursor-color "white")
@@ -58,7 +57,9 @@
 (global-linum-mode 1)
 (global-hl-line-mode -1)
 (setq linum-format " %d ")
+(setq prelude-flyspell nil)
 (toggle-scroll-bar -1)
 (global-visual-line-mode t)
 (set-face-attribute 'default nil :height 150)
+(prelude-require-packages '(projectile))
 ;;; personal.el ends here
